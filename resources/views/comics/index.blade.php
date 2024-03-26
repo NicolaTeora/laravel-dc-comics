@@ -27,6 +27,9 @@
                                 <td>{{ $comic->series }}</td>
                                 <td>{{ $comic->sale_date }}</td>
                                 <td>{{ $comic->type }}</td>
+                                <td>
+                                    <a href="{{ route('comics.show', $comic) }}">info</a>
+                                </td>
                             </tr>
                         @endforeach
                     </tbody>

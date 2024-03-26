@@ -18,5 +18,7 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
-// rote INDEX()
+// imposto la rotta INDEX() per la vista della lista dei fumetti
 Route::get('/comics', [ComicController::class, 'index'])->name('comics.index');
+// imposto la rotta SHOW() per la vista dei dettagli del fumetto
+Route::get('/comics{comic}', [ComicController::class, 'show'])->name('comics.show');

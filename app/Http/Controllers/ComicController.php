@@ -14,6 +14,7 @@ class ComicController extends Controller
      */
     public function index()
     {
+        //recupero la lista dei fumetti da passare alla vista
         $comics = Comic::all();
         return view('comics.index', compact('comics'));
     }
@@ -45,9 +46,10 @@ class ComicController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Comic $comic)
     {
-        //
+        //impostare qui la logica per la visualizzazione dei dettagli 
+        return view('comics.show', compact('comic'));
     }
 
     /**
