@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Pagina iniziale')
+@section('title', 'comic info')
 
 @section('main-content')
     <section>
@@ -16,10 +16,14 @@
                         <div class="col-6">
                             <strong>{{ $comic->series }}</strong>
                             <p>{{ $comic->description }}</p>
+                            <strong>$ {{ $comic->price }}</strong>
                         </div>
                     </div>
                 </div>
             </div>
+            <button class="btn btn-link">
+                <a href="{{ route('comics.index') }}"><- Back</a>
+            </button>
         </div>
 
     </section>
