@@ -22,12 +22,12 @@ class ComicSeeder extends Seeder
             $comic = new Comic;
 
             $comic->title = $faker->firstName();
-            $comic->description = $faker->paragraph(2, true);
+            $comic->description = $faker->sentence();
             $comic->thumb = $faker->imageUrl(640, 480, 'comic', true);
             $comic->price = $faker->randomFloat(1, 20, 30);
-            $comic->series = $faker->words(2, true);
+            $comic->series = $faker->word();
             $comic->sale_date = $faker->dateTime();
-            $comic->type = $faker->words();
+            $comic->type = $faker->word();
 
             $comic->save();
         }
