@@ -22,3 +22,5 @@ Route::get('/', function () {
 Route::get('/comics', [ComicController::class, 'index'])->name('comics.index');
 // imposto la rotta SHOW() per la vista dei dettagli del fumetto
 Route::get('/comics{comic}', [ComicController::class, 'show'])->name('comics.show');
+
+Route::get('/create', [ComicController::class, 'create'])->name('comics.create');
