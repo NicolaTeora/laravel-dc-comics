@@ -7,7 +7,7 @@
 
         <div class="container py-4">
             <h2>Add new Comic</h2>
-            <form action="" method="POST">
+            <form action="{{ route('comics.store') }}" method="POST">
                 @csrf
                 <div class="row">
 
@@ -29,12 +29,17 @@
 
                     <div class="mb-3  col-3">
                         <label for="sale_date" class="form-label">Sale Date:</label>
-                        <input type="datetime-local" min=0 step=0.01 name="sale_date" class="form-control" id="price">
+                        <input type="date" min=0 step=0.01 name="sale_date" class="form-control" id="price">
                     </div>
 
-                    <div class="mb-3  col-12">
+                    <div class="mb-3  col-9">
                         <label for="thumb" class="form-label">Thumb:</label>
                         <input type="text" name="thumb" class="form-control" id="thumb" placeholder="http://img..">
+                    </div>
+
+                    <div class="mb-3  col-3">
+                        <label for="type" class="form-label">Type:</label>
+                        <input type="text" name="type" class="form-control" id="type" placeholder="Type comic">
                     </div>
 
                     <div class="col-12">
