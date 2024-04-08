@@ -13,22 +13,28 @@
 
                     <div class="mb-3  col-3">
                         <label for="title" class="form-label">Title:</label>
-                        <input type="text" name="title" class="form-control" id="title">
+                        <input type="text" name="title" class="form-control" id="title" placeholder="title">
                     </div>
 
                     <div class="mb-3  col-3">
                         <label for="series" class="form-label">Series:</label>
-                        <input type="text" name="series" class="form-control" id="series">
+                        <input type="text" name="series" class="form-control" id="series" placeholder="serie">
                     </div>
 
                     <div class="mb-3  col-3">
                         <label for="price" class="form-label">Price:</label>
-                        <input type="number" min=0 step=0.01 name="price" class="form-control" id="price">
+                        <input type="number" min=0 step=0.01 name="price" class="form-control" id="price"
+                            placeholder="00.00">
                     </div>
 
                     <div class="mb-3  col-3">
                         <label for="sale_date" class="form-label">Sale Date:</label>
                         <input type="datetime-local" min=0 step=0.01 name="sale_date" class="form-control" id="price">
+                    </div>
+
+                    <div class="mb-3  col-12">
+                        <label for="thumb" class="form-label">Thumb:</label>
+                        <input type="text" name="thumb" class="form-control" id="thumb" placeholder="http://img..">
                     </div>
 
                     <div class="col-12">
