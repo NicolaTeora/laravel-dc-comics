@@ -15,7 +15,7 @@ class ComicController extends Controller
     public function index()
     {
         //recupero la lista dei fumetti da passare alla vista
-        $comics = Comic::all();
+        $comics = Comic::paginate(10);
         return view('comics.index', compact('comics'));
     }
 
