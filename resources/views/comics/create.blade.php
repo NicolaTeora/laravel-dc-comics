@@ -26,13 +26,18 @@
                         <input type="number" min=0 step=0.01 name="price" class="form-control" id="price">
                     </div>
 
+                    <div class="mb-3  col-3">
+                        <label for="sale_date" class="form-label">Sale Date:</label>
+                        <input type="datetime-local" min=0 step=0.01 name="sale_date" class="form-control" id="price">
+                    </div>
+
                     <div class="col-12">
                         <label for="description" class="form-label">Description:</label>
                         <textarea name="description" class="form-control" id="" cols="30" rows="10"></textarea>
                     </div>
 
                 </div>
-
+                <button type="submit" class="my-2 btn btn-success">Save</button>
             </form>
     </section>
 @endsection

@@ -20,14 +20,6 @@
                         ]) aria-current="page"
                             href="{{ route('comics.index') }}">Comics</a>
                     </li>
-
-                    <li class="nav-item">
-                        <a @class([
-                            'nav-link',
-                            'active' => Route::currentRouteName() == 'create',
-                        ]) aria-current="page" href="{{ route('comics.create') }}">Add
-                            Comic</a>
-                    </li>
             </div>
         </div>
     </nav>

@@ -34,8 +34,11 @@
                         @endforeach
                     </tbody>
                 </table>
-                {{ $comics->links('pagination::bootstrap-5') }}
+                <div>
+                    <a class="btn my-3 text-bg-success" href="{{ route('comics.create') }}">+ Add comic</a>
+                </div>
             </div>
+            {{ $comics->links('pagination::bootstrap-5') }}
         </div>
     </section>
 @endsection
